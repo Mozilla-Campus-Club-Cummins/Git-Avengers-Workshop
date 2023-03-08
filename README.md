@@ -16,6 +16,20 @@ By the end of this workshop, you will be able to:
 - Creating Pull Request
 - Use Git commands to create, modify, and merge branches
 
+# Github Repository Rules
+- Any PR(Pull Request) from outside college will not be accepted.
+
+- Mention your "firstname lastname" on your GitHub profile (If we are unable to identify you we won't accept your PR).
+
+- Any kind of spamming won't be tolerated.
+
+- Make sure you have registered on google form which was circulated (Check your mails to get the registration link).
+
+- Make sure the code is with proper indentation and comments.
+
+- In case of any plagiarism your PR will be rejected
+
+
 # Resources
 Here are some resources you can refer to for additional learning:
 
@@ -33,17 +47,5 @@ Here are some resources you can refer to for additional learning:
 -  Github Repository Rules
     - (https://github.com/marketplace/repo-rules)
 
-# Github Repository Rules
-- Any PR(Pull Request) from outside college will not be accepted.
-
-- Mention your "firstname lastname" on your GitHub profile (If we are unable to identify you we won't accept your PR).
-
-- Any kind of spamming won't be tolerated.
-
-- Make sure you have registered on google form which was circulated (Check your mails to get the registration link).
-
-- Make sure the code is with proper indentation and comments.
-
-- In case of any plagiarism your PR will be rejected
 
 
