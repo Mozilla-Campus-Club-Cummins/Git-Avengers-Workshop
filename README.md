@@ -2,32 +2,17 @@
 <l>Hands-on Workshop</l>
 <l>Only for students of Cummins College of Engineering, Pune</l>
 
+
 # Git and GitHub Workshop
 
 Welcome to our hands-on workshop on Git and GitHub! This workshop is designed to teach you the basics of version control and collaboration using Git and GitHub.
 
-# Prerequisites
-
-To participate in this workshop, you should have basic knowledge of the command line interface and experience with basic coding concepts. You should also have a laptop with Git installed and an internet connection.
-
-# Workshop Materials
-
-For this workshop, you will need:
-
-- A laptop with Git installed
-- An internet connection
-- A GitHub account
-- Workshop Structure
-- The workshop will be approximate 45 Minutes long and will consist of the following sessions :
-    - Introduction to Git and version control
-    - Basic Git commands and workflow
-    - Collaborating with Git and GitHub
-    - There will be a 10-minute Quiz between the  session.
 
 # Learning Objectives
 
 By the end of this workshop, you will be able to:
-
+- Familiarizing with Github
+- Creating Pull Request
 - Understand the basics of version control
 - Use Git commands to create, modify, and merge branches
 - Collaborate with others using Git and GitHub
@@ -56,5 +41,17 @@ Here are some resources you can refer to for additional learning:
 -  Github Repository Rules
     - (https://github.com/marketplace/repo-rules)
 
+# Github Repository Rules
+- Any PR(Pull Request) from outside college will not be accepted.
+
+- Mention your "firstname lastname" on your GitHub profile (If we are unable to identify you we won't accept your PR).
+
+- Any kind of spamming won't be tolerated.
+
+- Make sure you have registered on google form which was circulated (Check your mails to get the registration link).
+
+- Make sure the code is with proper indentation and comments.
+
+- In case of any plagiarism your PR will be rejected
 
 
