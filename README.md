@@ -3,9 +3,10 @@
 <l>Only for students of Cummins College of Engineering, Pune</l>
 
 
+
 # Git and GitHub Workshop
 
-Welcome to our hands-on workshop on Git and GitHub! This workshop is designed to teach you the basics of version control and collaboration using Git and GitHub.
+Welcome to our hands-on workshop on Git and GitHub! Also the workshop is to teach how to create pull request and get started with opensource journey.
 
 
 # Learning Objectives
@@ -13,16 +14,7 @@ Welcome to our hands-on workshop on Git and GitHub! This workshop is designed to
 By the end of this workshop, you will be able to:
 - Familiarizing with Github
 - Creating Pull Request
-- Understand the basics of version control
 - Use Git commands to create, modify, and merge branches
-- Collaborate with others using Git and GitHub
-## Exercises
-During this workshop, you will complete the following exercises:
-
-- Initializing a Git repository
-- Creating a branch and making changes
-- Committing changes and merging branches
-- Collaborating with others on GitHub
 
 # Resources
 Here are some resources you can refer to for additional learning:
