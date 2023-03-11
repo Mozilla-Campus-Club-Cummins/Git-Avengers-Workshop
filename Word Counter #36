@@ -1,0 +1,23 @@
+
+
+# Python program that counts the number of words, characters, and lines in a given text file.
+
+filename = input("Enter the file name: ")
+
+with open(filename, 'r') as file:
+    # Read the contents of the file
+    contents = file.read()
+    
+    # Count the number of words
+    words = len(contents.split())
+    
+    # Count the number of characters
+    chars = len(contents)
+    
+    # Count the number of lines
+    lines = len(contents.split('\n'))
+    
+    # Print the results
+    print(f"Number of words: {words}")
+    print(f"Number of characters: {chars}")
+    print(f"Number of lines: {lines}")
