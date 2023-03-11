@@ -1,0 +1,13 @@
+
+'''Python code to delete duplicates from a string '''
+
+input_str = input("Enter a string: ")
+output_str = ""
+
+# Iterate over each character in the input string
+for char in input_str:
+    # If the character is not already in the output string, add it
+    if char not in output_str:
+        output_str += char
+
+print("String after removing duplicates:", output_str)
