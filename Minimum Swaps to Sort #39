@@ -1,0 +1,50 @@
+
+
+
+
+/* Write code to find the minimum number of swaps required to sort the given array in increasing order.
+
+Example:
+
+Input:
+A[]= {12, 20, 8, 2, 6 }
+
+Output:
+2
+
+Explanation: swap 12 with 2 , swap 20 with 6
+
+*/
+
+
+
+public class MinimumSwaps {
+    public static int findMinimumSwaps(int[] arr) {
+        int n = arr.length;
+        int[] temp = Arrays.copyOfRange(arr, 0, n);
+        Arrays.sort(temp);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(arr[i], i);
+        }
+        int swaps = 0;
+        for (int i = 0; i < n; i++) {
+            int num = temp[i];
+            if (arr[i] != num) {
+                swaps++;
+                int tempIndex = map.get(num);
+                map.put(arr[i], tempIndex);
+                arr[tempIndex] = arr[i];
+                arr[i] = num;
+            }
+        }
+        return swaps;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {12, 20, 8, 2, 6};
+        int swaps = findMinimumSwaps(arr);
+        System.out.println(swaps);
+    }
+}
+
