@@ -1,0 +1,96 @@
+
+
+
+/*
+Given a linked list of characters and a string S.Return all the anagrams of the string present in the given linked list.In case of overlapping anagrams choose the first anagram from left.
+
+Example:
+Input: a -> b -> c -> a -> d -> b -> c -> a
+S = bac
+Output: [a -> b -> c, b -> c -> a]
+Explanation: In the given linked list,
+there are three anagrams:
+
+a -> b -> c -> a -> d -> b -> c -> a
+a -> b -> c -> a -> d -> b -> c -> a
+a -> b -> c -> a -> d -> b -> c -> a
+But in 1 and 2, a -> b -> c and b -> c-> a
+are ovelapping.So we take a -> b -> c as it
+comes first from left.So the output is:
+[a->b->c,b->c->a]
+
+*/
+
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
+public class AnagramsInLinkedList {
+    
+    static class Node {
+        char data;
+        Node next;
+        Node(char data) {
+            this.data = data;
+            next = null;
+        }
+    }
+    
+    public static void main(String[] args) {
+        Node head = new Node('a');
+        head.next = new Node('b');
+        head.next.next = new Node('c');
+        head.next.next.next = new Node('a');
+        head.next.next.next.next = new Node('d');
+        head.next.next.next.next.next = new Node('b');
+        head.next.next.next.next.next.next = new Node('c');
+        head.next.next.next.next.next.next.next = new Node('a');
+        
+        String S = "bac";
+        
+        List<Node> anagrams = findAnagrams(head, S);
+        System.out.println(anagrams);
+    }
+    
+    public static List<Node> findAnagrams(Node head, String S) {
+        List<Node> anagrams = new ArrayList<>();
+        int n = S.length();
+        if (n == 0 || head == null) {
+            return anagrams;
+        }
+        HashMap<String, Node> map = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
+        Node curr = head;
+        for (int i = 0; i < n; i++) {
+            sb.append(S.charAt(i));
+        }
+        String sorted = sortString(sb.toString());
+        sb.setLength(0);
+        while (curr != null) {
+            sb.append(curr.data);
+            String str = sb.toString();
+            if (str.length() == n) {
+                String sortedStr = sortString(str);
+                if (sortedStr.equals(sorted)) {
+                    if (!map.containsKey(sortedStr)) {
+                        map.put(sortedStr, curr);
+                        anagrams.add(curr);
+                    }
+                }
+                sb.deleteCharAt(0);
+            }
+            curr = curr.next;
+        }
+        return anagrams;
+    }
+    
+    public static String sortString(String s) {
+        char[] arr = s.toCharArray();
+        Arrays.sort(arr);
+        return new String(arr);
+    }
+}
+
