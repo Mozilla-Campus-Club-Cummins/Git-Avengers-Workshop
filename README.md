@@ -5,17 +5,12 @@ Only for students of Cummins College of Engineering, Pune
 
 ## Resources
 Here are some resources you can refer to for additional learning
-- Git Documentation
-   - (https://docs.github.com/en/pages)
 
-- GitHub guides
-    - (https://github.com/git-guides)
+- GitHub guides: https://github.com/git-guides
 
-- GitHub CLI
-    - (https://cli.github.com/)
+- GitHub CLI: https://cli.github.com
 
--  Github Repository Rules
-    - (https://github.com/marketplace/repo-rules)
+-  GitHub Repository Rules: https://github.com/marketplace/repo-rules
 
 
 
